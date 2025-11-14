@@ -31,7 +31,7 @@ groceryRouter.put('/:id', updateGrocery, (req, res) => {
   return res.status(200).json(res.locals.updatedGrocery);
 });
 
-groceryRouter.delete('/id', deleteGrocery, (req, res) => {
+groceryRouter.delete('/:id', deleteGrocery, (req, res) => {
   return res.status(200).json(res.locals.deletedGrocery);
 });
 
